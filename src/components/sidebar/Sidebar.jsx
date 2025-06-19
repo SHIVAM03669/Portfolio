@@ -70,7 +70,7 @@ const Sidebar = (props) => {
                 </nav>
 
                 <div className="nav__footer">
-                    <button onClick={() => { props.switchTheme(); showMenu(!toggle) }} className="nav__link footer__button">
+                    <button onClick={() => { props.switchTheme(); showMenu(!toggle) }} className="nav__link footer__button link">
                         {props.theme === 'light' ? <RiMoonLine /> : <RiSunLine />}
                     </button>
                 </div>

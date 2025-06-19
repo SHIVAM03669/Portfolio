@@ -101,7 +101,7 @@ const Contact = (props) => {
                         ></textarea>
                     </div>
 
-                    <button type="submit" className="btn">
+                    <button type="submit" className="btn link">
                         {loading ? "Sending..." : "Send Message"}
                     </button>
                 </form>

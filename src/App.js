@@ -1,4 +1,5 @@
 import './App.css';
+import Cursor from './components/cursor/cursor';
 
 import Sidebar from './components/sidebar/Sidebar';
 import Home from './components/home/Home';
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <div className="app" data-theme={theme}>
+            <Cursor isDesktop={true} />
             <Sidebar theme={theme} switchTheme={switchTheme} />
             <main className='main'>
                 <Home />
