@@ -3,6 +3,7 @@ import "./Portfolio.css";
 
 import Menu from "./Menu";
 import { RiGithubLine, RiLink } from "react-icons/ri";
+import TextPressure from '../textpressure';
 
 import { motion } from "framer-motion";
 
@@ -19,7 +20,20 @@ const Portfolio = () => {
 
 	return (
 		<section className="portfolio container section" id="portfolio">
-			<h2 className="section__title">Recent Projects</h2>
+			<div style={{position: 'relative', height: '150px', width: '80%', margin: '0 auto 2rem auto'}}>
+                <TextPressure
+                  text="Recent Projects"
+                  flex={true}
+                  alpha={false}
+                  stroke={false}
+                  width={true}
+                  weight={true}
+                  italic={true}
+                  textColor="var(--title-color)"
+                  strokeColor="#ff0000"
+                  minFontSize={36}
+                />
+            </div>
 
 			<div className="portfolio__filters">
 				<span className={activeFilter === 0 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { setItems(Menu); setActiveFilter(0) }}>

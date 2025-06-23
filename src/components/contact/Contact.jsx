@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
 import "react-toastify/dist/ReactToastify.css";
+import ScrollFloat from "../ScrollFloat";
 
 const Contact = (props) => {
     const [name, setName] = useState("");
@@ -49,7 +50,7 @@ const Contact = (props) => {
 
     return (
         <section className="contact container section" id="contact">
-            <h2 className="section__title">Get In Touch</h2>
+            <ScrollFloat>Get In Touch</ScrollFloat>
 
             <div className="contact__container grid">
                 <div className="contact__info">

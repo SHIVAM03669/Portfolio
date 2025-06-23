@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Resume.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Button from "./Button";
+import TextPressure from '../textpressure';
 
 import WorkExperience from "./WorkExperience";
 
@@ -10,7 +11,20 @@ const Resume = () => {
 
     return (
         <section className="resume container section" id="resume">
-            <h2 className="section__title">Experience</h2>
+            <div style={{position: 'relative', height: '300px', width: '80%', margin: '0 auto -2rem auto'}}>
+                <TextPressure
+                  text="Experience"
+                  flex={true}
+                  alpha={false}
+                  stroke={false}
+                  width={true}
+                  weight={true}
+                  italic={true}
+                  textColor="var(--title-color)"
+                  strokeColor="#ff0000"
+                  minFontSize={36}
+                />
+            </div>
 
             <div className="resume__container">
                 <Tabs

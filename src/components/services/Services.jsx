@@ -3,6 +3,7 @@ import './Services.css';
 import Image1 from '../../assets/service-1.svg'
 import Image2 from '../../assets/service-2.svg'
 import Image3 from '../../assets/service-3.svg'
+import TextPressure from '../textpressure';
 
 const data = [
     {
@@ -31,7 +32,20 @@ const data = [
 const Services = () => {
     return (
         <section className="services container section" id="services">
-            <h2 className="section__title">Services</h2>
+            <div style={{position: 'relative', height: '300px', width: '80%', margin: '0 auto -2rem auto'}}>
+                <TextPressure
+                  text="Services"
+                  flex={true}
+                  alpha={false}
+                  stroke={false}
+                  width={true}
+                  weight={true}
+                  italic={true}
+                  textColor="var(--title-color)"
+                  strokeColor="#ff0000"
+                  minFontSize={36}
+                />
+            </div>
 
             <div className="services__container grid">
                 {data.map(({ id, image, title, description }) => {

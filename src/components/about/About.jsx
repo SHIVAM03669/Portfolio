@@ -3,6 +3,7 @@ import './About.css';
 import Image from '../../assets/avatar-2.svg';
 import Resume from '../../assets/resume.pdf';
 import AboutBox from './AboutBox';
+import ScrollFloat from '../ScrollFloat';
 
 const About = () => {
   const downloadResume = async () => {
@@ -11,7 +12,7 @@ const About = () => {
 
   return (
     <section className="about container section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <ScrollFloat>About Me</ScrollFloat>
 
       <div className="about__container grid">
         <img src={Image} alt="Avatar" className="about__img" />
